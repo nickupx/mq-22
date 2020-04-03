@@ -1,13 +1,13 @@
     @font-face {
         font-family: "Open Sans";
-        src: url(/fonts/OpenSans-Regular.woff);
+        src: url(../fonts/OpenSans-Regular.woff);
         font-weight: 400;
         font-style: normal;
     }
     
     @font-face {
         font-family: "Open Sans";
-        src: url(/fonts/OpenSans-Bold.woff);
+        src: url(../fonts/OpenSans-Bold.woff);
         font-weight: 700;
         font-style: bold;
     }
@@ -71,13 +71,13 @@
     }
     
     .header {
-        background-image: url(/images/football_767.jpg);
+        background-image: url(../images/football_767.jpg);
         padding-top: 33px;
         padding-bottom: 84px;
     }
     
     .footer {
-        background-image: url(/images/game_767.jpg);
+        background-image: url(../images/game_767.jpg);
         background-position: top right;
         padding-top: 100px;
         padding-bottom: 8px;
@@ -186,11 +186,11 @@
     }
     
     .link-store-apple {
-        background-image: url(/images/apple_logo_black.svg);
+        background-image: url(../images/apple_logo_black.svg);
     }
     
     .link-store-google {
-        background-image: url(/images/google-play.svg);
+        background-image: url(../images/google-play.svg);
     }
     
     .section {
@@ -209,11 +209,11 @@
     }
     
     .section-athlets::after {
-        background-image: url(/images/footballer_192.png);
+        background-image: url(../images/footballer_192.png);
     }
     
     .section-players::after {
-        background-image: url(/images/basketballer_302.png);
+        background-image: url(../images/basketballer_302.png);
     }
     
     .section-items {
@@ -311,15 +311,15 @@
     }
     
     .section-item-pictures-be-active {
-        background-image: url(/images/be-active_640.jpg);
+        background-image: url(../images/be-active_640.jpg);
     }
     
     .section-item-pictures-find-contact {
-        background-image: url(/images/find-contact_640.jpg);
+        background-image: url(../images/find-contact_640.jpg);
     }
     
     .section-item-pictures-work-it {
-        background-image: url(/images//work-it_640.jpg);
+        background-image: url(../images//work-it_640.jpg);
     }
     
     .section-item-pictures>p {
