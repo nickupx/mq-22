@@ -1,0 +1,354 @@
+    @font-face {
+        font-family: "Open Sans";
+        src: url(/fonts/OpenSans-Regular.woff);
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: "Open Sans";
+        src: url(/fonts/OpenSans-Bold.woff);
+        font-weight: 700;
+        font-style: bold;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    html,
+    body,
+    div,
+    nav,
+    header,
+    main,
+    section,
+    aside,
+    footer,
+    address,
+    input,
+    button,
+    ul,
+    ol,
+    time,
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+        padding: 0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    
+    img {
+        display: block;
+    }
+    
+    body {
+        font-family: "Open Sans", Arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #fff;
+        color: #000;
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    .header,
+    .footer {
+        background-color: #0A0E34;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 568px;
+    }
+    
+    .header {
+        background-image: url(/images/football_767.jpg);
+        padding-top: 33px;
+        padding-bottom: 84px;
+    }
+    
+    .footer {
+        background-image: url(/images/game_767.jpg);
+        background-position: top right;
+        padding-top: 100px;
+        padding-bottom: 8px;
+    }
+    
+    .header::before,
+    footer::before {
+        content: "";
+        background-color: #0A0E34;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        opacity: 0.9;
+    }
+    
+    .logo {
+        width: 133px;
+        fill: #fff;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .heading {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+    .heading-main {
+        color: #fff;
+        font-size: 1.75em;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 120px 0 80px 0;
+        width: 100%;
+    }
+    
+    .heading-main>span {
+        display: block;
+    }
+    
+    .heading-main-line-2 {
+        margin-left: 2em;
+        align-self: flex-end;
+    }
+    
+    .heading-footer {
+        align-items: center;
+        margin: 0;
+    }
+    
+    .heading-section {
+        color: #ececec;
+        font-size: 3.44em;
+    }
+    
+    .heading-item {
+        color: #ccc;
+        font-size: 1.44em;
+    }
+    
+    .heading-item-pictures {
+        color: #ECECEC;
+        font-size: 1.75em;
+        margin-top: 20px;
+    }
+    
+    .heading-main-split {
+        display: block;
+        margin-top: 13px;
+        margin-left: 1.5em;
+        /* float: right; */
+    }
+    
+    .links-store {
+        width: 100%;
+        position: relative;
+        flex-grow: 10;
+    }
+    
+    .link-store {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 6px;
+        padding-left: calc(35% + 24px);
+        background-color: #5E42B0;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-position: 35% center;
+        color: #fff;
+        font-size: 8px;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+        border-radius: 5em;
+        text-decoration: none;
+    }
+    
+    .link-store-download {}
+    
+    .link-store-name {
+        font-weight: 700;
+    }
+    
+    .link-store-apple {
+        background-image: url(/images/apple_logo_black.svg);
+    }
+    
+    .link-store-google {
+        background-image: url(/images/google-play.svg);
+    }
+    
+    .section {
+        position: relative;
+    }
+    
+    .section-athlets-players::after {
+        content: "";
+        background-repeat: no-repeat;
+        background-position: center 80px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+    
+    .section-athlets::after {
+        background-image: url(/images/footballer_192.png);
+    }
+    
+    .section-players::after {
+        background-image: url(/images/basketballer_302.png);
+    }
+    
+    .section-items {
+        list-style-type: none;
+    }
+    
+    .section-item {
+        counter-increment: zero;
+        padding: 50px 20px 30px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .section-item::before {
+        content: "0" counter(zero);
+        margin-right: 10px;
+        font-size: 0.94em;
+        font-weight: 700;
+        display: block;
+        border-radius: 0;
+        border-bottom: 4px solid #5E42B0;
+    }
+    
+    .section-item>p {
+        font-size: 0.94em;
+        margin-top: 20px;
+    }
+    
+    .section-athlets-players-item:first-child {
+        margin-top: 230px;
+        padding-top: 70px;
+    }
+    
+    .section-athlets-players-item:nth-child(3n+1) {
+        background-color: #fafafa;
+    }
+    
+    .section-athlets-players-item:nth-child(3n+2) {
+        background-color: #F5F4F9;
+    }
+    
+    .section-athlets-players-item:nth-child(3n+3) {
+        background-color: #5E42B0;
+    }
+    
+    .section-players-item:nth-child(3n+3) {
+        background-color: #090C35;
+    }
+    
+    .section-athlets-players-item:nth-child(3n+3)::before {
+        border-bottom: 4px solid #fff;
+    }
+    
+    .section-athlets-players-item:nth-child(3n+3)::before {
+        color: #9A81E1;
+    }
+    
+    .section-athlets-players-item:nth-child(3n+3)>p {
+        color: #fff;
+    }
+    
+    .section-item-pictures-text {
+        background-color: #fff;
+        padding: 20px;
+    }
+    
+    .section-item-pictures::before {
+        color: #fff;
+        border-bottom: 4px solid #8E7BC8;
+        margin-top: 1.5em;
+        margin-left: 3.1em;
+        z-index: 2;
+    }
+    
+    .section-item-pictures {
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        padding: 0;
+        padding-top: 293px;
+        background-size: contain;
+        position: relative;
+        background-color: #fff;
+        background-position: top center;
+    }
+    
+    .section-item-pictures-number-bg {
+        width: 70px;
+        height: 70px;
+        background-color: #5E42B0;
+        position: absolute;
+        top: 293px;
+        left: 20px;
+    }
+    
+    .section-item-pictures-be-active {
+        background-image: url(/images/be-active_640.jpg);
+    }
+    
+    .section-item-pictures-find-contact {
+        background-image: url(/images/find-contact_640.jpg);
+    }
+    
+    .section-item-pictures-work-it {
+        background-image: url(/images//work-it_640.jpg);
+    }
+    
+    .section-item-pictures>p {
+        font-size: 1em;
+    }
+    
+    .footer-subline {
+        position: relative;
+        color: #ABA2CB;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        margin-bottom: 70px;
+    }
+    
+    .icon-surface {
+        position: relative;
+        width: 72px;
+        height: 72px;
+        border-radius: 10px;
+        background: #5E42B0;
+        background: linear-gradient(180deg, rgba(119, 86, 215, 1) 0%, rgba(80, 55, 154, 1) 100%);
+        padding: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .icon-surface>img {
+        display: block;
+        width: 48px;
+    }
