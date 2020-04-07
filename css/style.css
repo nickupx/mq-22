@@ -41,6 +41,13 @@
         appearance: none;
     }
     
+    .visually-hidden {
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        position: absolute;
+    }
+    
     img {
         display: block;
     }
@@ -81,6 +88,7 @@
         background-position: top right;
         padding-top: 100px;
         padding-bottom: 8px;
+        text-align: center;
     }
     
     .header::before,
@@ -197,22 +205,21 @@
         position: relative;
     }
     
-    .section-athlets-players::after {
+    .heading-section-athlets-players::after {
         content: "";
         background-repeat: no-repeat;
         background-position: center 80px;
-        top: 0;
         right: 0;
-        bottom: 0;
         left: 0;
         position: absolute;
+        height: 360px;
     }
     
-    .section-athlets::after {
+    .heading-section-athlets::after {
         background-image: url(../images/footballer_192.png);
     }
     
-    .section-players::after {
+    .heading-section-players::after {
         background-image: url(../images/basketballer_302.png);
     }
     
@@ -301,7 +308,8 @@
         background-position: top center;
     }
     
-    .section-item-pictures-number-bg {
+    .section-item-pictures-text:before {
+        content: "";
         width: 70px;
         height: 70px;
         background-color: #5E42B0;
@@ -352,4 +360,5 @@
         display: block;
         width: 48px;
     }
-    /* test */
+    
+    @media (min-width: 481px) {}
