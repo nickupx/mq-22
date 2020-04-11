@@ -153,6 +153,7 @@
         color: #ccc;
         font-size: 1.44em;
         letter-spacing: 0.05em;
+        margin-left: 1.2em;
     }
     
     .heading-item-pictures {
@@ -256,6 +257,49 @@
         display: block;
         border-radius: 0;
         border-bottom: 4px solid #5E42B0;
+        position: absolute;
+    }
+    
+    .section-item-pictures {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        position: relative;
+        background-color: #fff;
+    }
+    
+    .section-item-pictures::before {
+        color: #fff;
+        border-bottom: 4px solid #8E7BC8;
+        margin-top: 1.5em;
+        margin-left: 3.1em;
+        z-index: 2;
+        position: absolute;
+        top: 293px;
+    }
+    
+    .section-item-pictures-text:before {
+        content: "";
+        width: 70px;
+        height: 70px;
+        background-color: #5E42B0;
+        top: 293px;
+        left: 20px;
+        position: absolute;
+    }
+    
+    .section-item-pictures-picture {
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    
+    .section-item-pictures-text {
+        background-color: #fff;
+        padding: 20px;
+        width: 100%;
     }
     
     .section-item>p {
@@ -294,41 +338,6 @@
     
     .section-athlets-players-item:nth-child(3n+3)>p {
         color: #fff;
-    }
-    
-    .section-item-pictures-text {
-        background-color: #fff;
-        padding: 20px;
-        width: 100%;
-    }
-    
-    .section-item-pictures::before {
-        color: #fff;
-        border-bottom: 4px solid #8E7BC8;
-        margin-top: 1.5em;
-        margin-left: 3.1em;
-        z-index: 2;
-    }
-    
-    .section-item-pictures {
-        flex-direction: column;
-        background-repeat: no-repeat;
-        padding: 0;
-        padding-top: 370px;
-        background-size: cover;
-        position: relative;
-        background-color: #fff;
-        background-position: bottom center;
-    }
-    
-    .section-item-pictures-text:before {
-        content: "";
-        width: 70px;
-        height: 70px;
-        background-color: #5E42B0;
-        position: absolute;
-        top: 370px;
-        left: 20px;
     }
     
     .section-item-pictures-be-active {
@@ -416,20 +425,23 @@
         .heading-item {
             font-size: 2em;
         }
+        .section-item-pictures-picture {
+            height: 580px;
+        }
         .section-item::before {
             font-size: 1.5em;
         }
         .section-item-pictures-text:before {
             width: 114px;
             height: 114px;
-            top: 580px;
             left: 32px;
+            top: 492px;
+        }
+        .section-item-pictures:before {
+            top: 492px;
         }
         .section-item-pictures-text {
             padding: 32px;
-        }
-        .section-item-pictures {
-            padding-top: 580px;
         }
         .header {
             background-image: url(../images/football_1280.jpg);
@@ -477,8 +489,8 @@
         .section-athlets-players-item:first-child {
             margin-top: 0;
         }
-        .section-item>p {
-            line-height: 1.8em;
+        .section-item p {
+            line-height: 1.3em;
         }
         .icon-surface {
             width: 130px;
@@ -544,6 +556,36 @@
             flex-direction: column;
             align-items: flex-start;
             margin-top: 8px;
+        }
+    }
+    
+    @media (min-width: 1120px) {
+        .section-item-pictures {
+            flex-direction: row;
+        }
+        .section-item-pictures-picture {
+            width: 50%;
+            height: 730px;
+            background-position: center center;
+        }
+        .section-item-pictures-text {
+            width: 50%;
+            padding: 15em 6em 1em 6em;
+        }
+        .section-item-pictures:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .section-item p {
+            font-size: 1.25em;
+        }
+        .section-item-pictures::before {
+            top: 16rem;
+            left: calc(50% - 3.6em);
+        }
+        .section-item-pictures-text:before {
+            top: 16rem;
+            position: absolute;
+            left: calc(50% - 114px / 2);
         }
     }
     
