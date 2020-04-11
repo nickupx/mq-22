@@ -61,7 +61,8 @@
     }
     
     .container {
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     .header,
@@ -80,14 +81,12 @@
     
     .header {
         background-image: url(../images/football_767.jpg);
-        padding-top: 33px;
     }
     
     .footer {
         background-image: url(../images/game_767.jpg);
         background-position: top right;
         padding-top: 100px;
-        padding-bottom: 8px;
         text-align: center;
     }
     
@@ -108,12 +107,14 @@
         fill: #fff;
         display: inline-block;
         position: relative;
+        margin: 32px;
     }
     
     .heading {
         text-transform: uppercase;
         font-weight: 700;
         line-height: 1.2em;
+        max-width: 1280px;
     }
     
     .heading-main {
@@ -145,6 +146,7 @@
     .heading-section {
         color: #ececec;
         font-size: 3.44em;
+        margin-top: 0.25em;
     }
     
     .heading-item {
@@ -218,6 +220,7 @@
         content: "";
         background-repeat: no-repeat;
         background-position: center 80px;
+        top: 0;
         right: 0;
         left: 0;
         position: absolute;
@@ -375,12 +378,12 @@
     
     @media (min-width: 641px) {
         .container {
-            padding: 0 32px;
+            padding-left: 32px;
+            padding-right: 32px;
         }
         .header,
         .footer {
             min-height: 960px;
-            padding: 33px 56px;
         }
         .logo {
             width: 205px;
@@ -493,6 +496,15 @@
         .subline-footer {
             font-size: 2.5em;
         }
+        .section-item-pictures-be-active {
+            background-image: url(../images/be-active_960.jpg);
+        }
+        .section-item-pictures-find-contact {
+            background-image: url(../images/find-contact_960.jpg);
+        }
+        .section-item-pictures-work-it {
+            background-image: url(../images//work-it_960.jpg);
+        }
     }
     
     @media (min-width: 1025px) {
@@ -521,7 +533,6 @@
         }
         .footer-icon {
             flex-direction: row;
-            xwidth: 50vw;
             flex-wrap: wrap;
         }
         .icon-surface {
@@ -537,6 +548,12 @@
     }
     
     @media (min-width: 1281px) {
+        .header {
+            background-image: url(../images/football_1920.jpg);
+        }
+        .footer {
+            background-image: url(../images/game_1920.jpg);
+        }
         .heading-section-athlets::after {
             background-position: top 0 left 48px;
         }
@@ -547,7 +564,8 @@
     
     @media (min-width: 1441px) {
         .container {
-            padding: 0 180px;
+            padding-left: 180px;
+            padding-right: 180px;
         }
         .heading-section-athlets::after {
             background-position: top 0 left 140px;
