@@ -293,7 +293,7 @@
         height: 350px;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 0 0;
+        background-position: center center;
     }
     
     .section-item-pictures-text {
