@@ -661,4 +661,7 @@
         .heading-section-players::before {
             right: 10%;
         }
+        .heading-main {
+            min-width: 1280px;
+        }
     }
