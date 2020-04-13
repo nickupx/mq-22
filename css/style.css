@@ -9,7 +9,7 @@
         font-family: "Open Sans";
         src: url(../fonts/OpenSans-Bold.woff);
         font-weight: 700;
-        font-style: bold;
+        font-style: normal;
     }
     
     * {
@@ -63,6 +63,8 @@
     .container {
         padding-left: 20px;
         padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .header,
@@ -114,7 +116,6 @@
         text-transform: uppercase;
         font-weight: 700;
         line-height: 1.2em;
-        max-width: 1280px;
     }
     
     .heading-main {
@@ -220,10 +221,11 @@
     .heading-section-athlets-players::after {
         content: "";
         background-repeat: no-repeat;
-        background-position: center 80px;
+        background-position: bottom 0 center;
         top: 0;
-        right: 0;
+        bottom: 0;
         left: 0;
+        right: 0;
         position: absolute;
         height: 360px;
     }
@@ -302,7 +304,7 @@
         width: 100%;
     }
     
-    .section-item>p {
+    .section-item p {
         margin-top: 1.25em;
         flex-basis: 100%;
     }
@@ -336,7 +338,7 @@
         color: #9A81E1;
     }
     
-    .section-athlets-players-item:nth-child(3n+3)>p {
+    .section-athlets-players-item:nth-child(3n+3) p {
         color: #fff;
     }
     
@@ -545,7 +547,8 @@
         }
         .footer-icon {
             flex-direction: row;
-            flex-wrap: wrap;
+            align-items: start;
+            max-width: 1120px;
         }
         .icon-surface {
             min-width: 130px;
@@ -554,8 +557,8 @@
         .icon-description {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            margin-top: 8px;
+            align-items: start;
+            text-align: left;
         }
     }
     
@@ -571,6 +574,10 @@
         .section-item-pictures-text {
             width: 50%;
             padding: 15em 6em 1em 6em;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            flex-wrap: wrap;
         }
         .section-item-pictures:nth-child(even) {
             flex-direction: row-reverse;
@@ -608,6 +615,9 @@
         .container {
             padding-left: 180px;
             padding-right: 180px;
+            xmax-width: 1920px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .heading-section-athlets::after {
             background-position: top 0 left 140px;
@@ -620,5 +630,27 @@
         }
         .section-players-item {
             padding-left: 180px;
+        }
+    }
+    
+    @media (min-width: 1921px) {
+        .heading-main {
+            max-width: 1120px;
+        }
+        .wrapper {
+            max-width: 1120px;
+        }
+        .container {
+            padding-left: 30%;
+            padding-right: 30%;
+        }
+        .section-athlets-players-item {
+            padding-left: 30%;
+        }
+        .heading-section-athlets::after {
+            background-position: top 0 left 12%;
+        }
+        .heading-section-players::after {
+            background-position: top 0 right 24%;
         }
     }
