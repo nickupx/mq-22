@@ -613,7 +613,7 @@
             left: -1%;
         }
         .heading-section-players::before {
-            background-image: url(/images/basketballer_991.png);
+            background-image: url(../images/basketballer_991.png);
             background-size: 750px;
             right: 0;
             width: 750px;
